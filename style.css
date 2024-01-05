@@ -1,72 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
 
-  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
-
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
-body{
-    background:black;
-    color: white;
-}
-
-
-.boxleft{
-    width: 25vw;
-    padding: 3px;
-    
-}
-.boxright{
-    width: 85vw;
-
+body {
+  background: rgb(0, 0, 0);
+  color: white;
 }
 
-.home ul li{
-    width: 24px;
-    list-style: none;
-    display: flex;
-    gap: 16px;
-    padding-top: 16px;
-    font-family: 'Roboto', sans-serif;
-    
+.boxleft {
+  width: 25vw;
+  padding: 3px;
 }
-.home ul li:hover{
-    color: aqua;
-
+.boxright {
+  width: 85vw;
+  margin: 6px 0px;
 }
-.bg-black{
-    background-color: black;
-    color: white;
-    
-}
-.invert{
-    filter: invert(1);
-}
-.heading{
-    width: 100%;
-    display: flex;
-    gap: 16px;
-    font-family: 'Roboto', sans-serif;
-    align-items: center;
-    font-size: 13px;
-    
-}
-.heading img{
-    width: 32px;
-}
-.Library{
-    min-height: 80vh;
-    position: relative;
-
-}
-.footer{
-  color:grey;
+.home ul li {
+  width: 24px;
+  list-style: none;
   display: flex;
-    font-size: 10px;
-    gap:13px;
-    position: absolute;
-    bottom: 0;    
+  gap: 16px;
+  padding-top: 16px;
+  font-family: "Roboto", sans-serif;
 }
-.footer a{
-    color: whitesmoke;
+.home ul li:hover {
+  color: aqua;
+}
+.bg-black {
+  background-color: black;
+  color: white;
+}
+.invert {
+  filter: invert(1);
+}
+
+.heading {
+  width: 100%;
+  display: flex;
+  gap: 16px;
+  font-family: "Roboto", sans-serif;
+  align-items: center;
+  font-size: 13px;
+}
+.heading img {
+  width: 32px;
+}
+.Library {
+  min-height: 80vh;
+  position: relative;
+}
+
+.footer {
+  color: rgb(22, 22, 22);
+  display: flex;
+  font-size: 10px;
+  gap: 13px;
+  position: absolute;
+  bottom: 0;
+  padding: 4px;
+}
+
+.footer a {
+  color: whitesmoke;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  gap: 4px;
+  background-color: rgb(31, 30, 30);
+}
+.header > * {
+  padding: 6px;
+}
+.card-conatiner {
+  margin: 15px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  overflow-y: scroll;
+  max-height: 70vh;
+}
+.card {
+  width: 200px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: rgb(51, 46, 46);
+  position: relative;
+}
+.card > * {
+  padding-top: 3px;
+}
+.card img {
+  width: 100%;
+  object-fit: contain;
+}
+.play {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  position: absolute;
+  top: 168px;
+  right: 17px;
+  opacity: 1;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #333; /* Change this to your desired track color */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #666; /* Change this to your desired handle color */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #888; /* Change this to your desired handle color on hover */
+}
+
+.lgn-btn {
+  background-color: black;
+  color: white;
+  font-size: 17px;
+  border-radius: 10px;
+  border: 2px solid black;
+}
+
+.lgn-btn:hover {
+  font-size: 1.2rem;
+}
+
+.sgn-btn {
+  background-color: rgb(221, 219, 219);
+  color: rgb(0, 0, 0);
+  font-size: 17px;
+  border-radius: 10px;
+  border: 2px solid black;
+}
+
+.sgn-btn:hover {
+  font-size: 1.2rem;
+}
+
+.playbar {
+  position: absolute;
+  bottom: 0;
+  background-color: green;
+  width: 100%;
+  padding: 12px;
 }
